@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2202.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 12.0px 'Apple SD Gothic Neo'; font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
+<p class="p1"><span class="s1">&lt;html lang="ko"&gt;</span></p>
+<p class="p1"><span class="s1">&lt;head&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta charset="UTF-8" /&gt;</span></p>
+<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</span></p>
+<p class="p1"><span class="s1">&lt;title&gt;</span><span class="s2">프롬프트</span><span class="s1"> </span><span class="s2">빌더</span><span class="s1">&lt;/title&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;style&gt;</span></p>
+<p class="p1"><span class="s1">body {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>font-family: Arial, sans-serif;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin: 0;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 20px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: #f5f5f5;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">h1 { text-align: center; }</span></p>
+<p class="p1"><span class="s1">.container { display: flex; gap: 20px; }</span></p>
+<p class="p1"><span class="s1">.box {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: #fff;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 10px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>border-radius: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 33%;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">input, textarea, button {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>width: 100%;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 6px;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">.item {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>background: #eee;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>margin-top: 5px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>padding: 6px;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>cursor: pointer;</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p1"><span class="s1">&lt;/style&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;body&gt;</span></p>
+<p class="p1"><span class="s1">&lt;h1&gt;</span><span class="s2">프롬프트</span><span class="s1"> </span><span class="s2">빌더</span><span class="s1">&lt;/h1&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;div class="container"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3&gt;</span><span class="s2">카테고리</span><span class="s1">&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input id="categoryInput" placeholder="</span><span class="s2">카테고리</span><span class="s1"> </span><span class="s2">추가</span><span class="s1">" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button onclick="addCategory()"&gt;</span><span class="s2">추가</span><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="categories"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3&gt;</span><span class="s2">항목</span><span class="s1">&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input id="itemInput" placeholder="</span><span class="s2">항목</span><span class="s1"> (</span><span class="s2">한글</span><span class="s1">)" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;input id="itemEnInput" placeholder="</span><span class="s2">프롬프트</span><span class="s1"> </span><span class="s2">문구</span><span class="s1"> (</span><span class="s2">영문</span><span class="s1">)" /&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button onclick="addItem()"&gt;</span><span class="s2">추가</span><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div id="items"&gt;&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;div class="box"&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h3&gt;</span><span class="s2">프롬프트</span><span class="s1">&lt;/h3&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;textarea id="promptOutput" rows="12"&gt;&lt;/textarea&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button onclick="copyPrompt()"&gt;</span><span class="s2">복사</span><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;button onclick="clearPrompt()"&gt;</span><span class="s2">초기화</span><span class="s1">&lt;/button&gt;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</span></p>
+<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">&lt;script&gt;</span></p>
+<p class="p1"><span class="s1">let data = JSON.parse(localStorage.getItem("promptData")) || {};</span></p>
+<p class="p1"><span class="s1">let currentCategory = null;</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function save() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>localStorage.setItem("promptData", JSON.stringify(data));</span></p>
+<p class="p1"><span class="s1">}</span></p>
+<p class="p2"><span class="s1"></span><br></p>
+<p class="p1"><span class="s1">function addCategory() {</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>const name = categoryInput.value.trim();</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>if (!name) return;</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>data[name] = [];</span></p>
+<p class="p1"><span class="s1"><span class="Apple-converted-space">  </span>currentCategory = name;</span></p>
+</body>
+</html>
